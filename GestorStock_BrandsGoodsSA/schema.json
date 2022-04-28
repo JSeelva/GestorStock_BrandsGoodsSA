@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json.org/draft-04/schema",
+
+  "type": "object",
+
+  "properties": {
+    "articles": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "articleCode": {
+              "type": "integer"
+            },
+            "articleName": {
+              "type": "string"
+            },
+            "articlePrice": {
+              "type": "number"
+            },
+            "articleAmount": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "articleCode",
+            "articleName",
+            "articlePrice",
+            "articleAmount"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "articles"
+  ]
+}
